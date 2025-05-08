@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -8,7 +9,7 @@ function Navbar() {
             <a href="#" className="text-gray-700 hover:text-indigo-600 transition duration-300">Features</a>
             <a href="#" className="text-gray-700 hover:text-indigo-600 transition duration-300">Resources</a>
             <a href="#" className="text-gray-700 hover:text-indigo-600 transition duration-300">Testimonials</a>
-            <button className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition duration-300 shadow">Login</button>
+            <button className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition duration-300 shadow"><NavLink to="/login">Login</NavLink></button>
         </div>
       </nav>
   )
